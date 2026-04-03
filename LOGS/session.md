@@ -34,4 +34,15 @@ Darkness Level: 1. The curse is patient. The clock has begun.
 
 [Turn 2] TAKE iron_key → picked up from dungeon_cell, now in inventory
 [Turn 3] MOVE north (dungeon_cell) → iron_key consumed, door unlocked, arrived in Great Hall
+
+[Turn 4] TALK ghost_knight → first encounter delivered. Attempted to free him — no scroll yet. Sir Aldric directs player to armory (west) and tower (up).
+The darkness deepens slightly. Sir Aldric's chains pulse.
+
+[Turn 5] MOVE west → arrived in Armory. AUTO-PICKUP: rusty_sword.
+⚠ DARKNESS TICK: turn 5 → darkness_level 1→2. The shadows lengthen.
+
+[Turn 6] MOVE east → returned to Great Hall. No items.
+
+[Turn 7] MOVE up → arrived in Watchtower. AUTO-PICKUP: ancient_scroll.
+The scroll hums the moment it is touched.
 ```

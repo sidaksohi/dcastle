@@ -16,7 +16,7 @@ The air up here is different. Thinner. Older. As if time forgot to rot this room
 
 ## Items Here
 
-- **Ancient Scroll** — Resting on the stone pedestal. Sealed with black wax marked by a broken sigil. It hums faintly. It has been waiting.
+*(none)*
 
 ---
 

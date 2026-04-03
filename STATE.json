@@ -2,15 +2,15 @@
   "version": "1.0.0",
   "player": {
     "name": "The Wanderer",
-    "current_room": "great_hall",
-    "inventory": [],
+    "current_room": "tower",
+    "inventory": ["rusty_sword", "ancient_scroll"],
     "status": "alive",
     "health": 100
   },
   "world": {
-    "darkness_level": 1,
-    "turn_count": 3,
-    "rooms_visited": ["entrance", "dungeon_cell", "great_hall"],
+    "darkness_level": 2,
+    "turn_count": 7,
+    "rooms_visited": ["entrance", "dungeon_cell", "great_hall", "armory", "tower"],
     "flags": {
       "gate_unlocked": false,
       "crypt_materialized": false,
@@ -21,7 +21,7 @@
     "ghost_knight": {
       "location": "great_hall",
       "state": "bound",
-      "spoken_to": false,
+      "spoken_to": true,
       "quest_complete": false
     }
   },
@@ -39,14 +39,14 @@
       "description": "A heavy iron key, cold and slick with age. The bow is shaped like a serpent devouring its own tail."
     },
     "rusty_sword": {
-      "location": "armory",
-      "taken": false,
+      "location": "inventory",
+      "taken": true,
       "name": "Rusty Sword",
       "description": "A once-proud blade, now eaten by rust. The edge still catches what little light exists."
     },
     "ancient_scroll": {
-      "location": "tower",
-      "taken": false,
+      "location": "inventory",
+      "taken": true,
       "name": "Ancient Scroll",
       "description": "Sealed with black wax marked by a broken sigil. It hums faintly when touched."
     },

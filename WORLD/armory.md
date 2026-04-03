@@ -14,7 +14,7 @@ One weapon survives intact — barely. A sword propped against the far wall, its
 
 ## Items Here
 
-- **Rusty Sword** — Propped against the far wall, its blade pitted and brown but its edge still catching what little light exists.
+*(none)*
 
 ---
 

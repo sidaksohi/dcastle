@@ -2,13 +2,14 @@
 
 **Status:** Alive
 **Health:** 100
-**Current Location:** The Great Hall
+**Current Location:** The Watchtower
 
 ---
 
 ## Inventory
 
-*(empty)*
+- Rusty Sword
+- Ancient Scroll
 
 ---
 
