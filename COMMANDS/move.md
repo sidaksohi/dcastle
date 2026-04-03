@@ -52,7 +52,7 @@ Process conditions in this order:
 
 ### Step 5 — Special: Escape from entrance
 
-If origin = "entrance" AND direction = "north" AND `flags.gate_unlocked == true`:
+If origin = "entrance" AND direction = "south" AND `flags.gate_unlocked == true`:
 1. `player.status = "escaped"`
 2. Append to LOGS: `[Turn {N}] ESCAPE → THE WANDERER HAS ESCAPED THE CASTLE.`
 3. Narrate victory — the gate swings open, dawn light, freedom

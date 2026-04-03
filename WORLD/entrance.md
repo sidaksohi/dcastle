@@ -28,4 +28,4 @@ The air carries the smell of wet stone and old fear.
 ---
 
 *When `flags.gate_unlocked == true`, the gate cracks open and an additional exit appears:*
-*- **Outside** → ESCAPE (the gate is open — freedom waits)*
+*- **South** → ESCAPE (the gate is open — freedom awaits beyond)*

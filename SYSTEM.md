@@ -94,7 +94,7 @@ If `requires_item` IS met: the item is **consumed** on use (location = "used", r
 
 ### Special: Escape from Entrance
 
-When moving north from entrance AND `flags.gate_unlocked == true`:
+When moving south from entrance AND `flags.gate_unlocked == true`:
 - Set `player.status = "escaped"`
 - This is the win condition
 
@@ -265,9 +265,9 @@ if turn_count > 0 AND turn_count % tick_interval == 0:
 2. Take `ancient_scroll` from tower
 3. Speak with Sir Aldric (spoken_to = true)
 4. Give scroll to Sir Aldric → darkness resets to 0, gate unlocks
-5. Return to entrance, go north → escaped
+5. Return to entrance, go south → escaped (gate is now open behind you)
 
 **Lose condition:**
 - darkness_level reaches 10 → consumed
 
-**Optimal run:** ~8 turns minimum (take key, move to great_hall, go up, take scroll, go down, give scroll, go south, go north to escape). Darkness would be 1 still on a perfect run.
+**Optimal run:** ~9 turns minimum (go east, take key, go north, go up, take scroll, go down, give scroll, go south, go south to escape). Darkness would be 1 still on a perfect run.

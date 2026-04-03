@@ -102,7 +102,7 @@ if turn_count > 0 AND turn_count % 5 == 0:
 
 ## Win Check
 
-After every MOVE from `entrance` going `north`:
+After every MOVE from `entrance` going `south`:
 
 ```
 if flags.gate_unlocked == true:

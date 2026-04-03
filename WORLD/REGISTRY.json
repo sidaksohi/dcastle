@@ -6,7 +6,7 @@
       "exits": {
         "north": { "to": "great_hall" },
         "east": { "to": "dungeon_cell" },
-        "outside": { "to": "escaped", "requires_flag": "gate_unlocked" }
+        "south": { "to": "escaped", "requires_flag": "gate_unlocked" }
       },
       "items_initial": ["torch"],
       "npc": null
