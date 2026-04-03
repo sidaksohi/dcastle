@@ -16,7 +16,7 @@ On the floor, half-buried in grime and centuries of sediment, something metal ca
 
 ## Items Here
 
-- **Iron Key** — Half-buried in the corner. The bow is shaped like a serpent devouring its own tail.
+*(none)*
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Status:** Alive
 **Health:** 100
-**Current Location:** Castle Entrance
+**Current Location:** The Great Hall
 
 ---
 

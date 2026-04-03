@@ -2,7 +2,7 @@
 
 ---
 
-## TEST-006: Pick up item present in current room
+## TEST-006: Auto-pickup — items collected automatically on room entry
 
 **Given:**
 - `STATE.json:player.current_room = "entrance"`
@@ -11,19 +11,19 @@
 - `STATE.json:items.torch = { "location": "entrance", "taken": false }`
 - `WORLD/entrance.md` lists torch under "Items Here"
 
-**When:** Player says `"take torch"`
+**When:** Player moves INTO entrance (or is already there and moves to any room with items — e.g., moves east to dungeon_cell where iron_key exists)
 
-**Then:**
-- `STATE.json:player.inventory = ["torch"]` ✓
-- `STATE.json:items.torch.taken = true` ✓
-- `STATE.json:items.torch.location = "inventory"` ✓
-- `STATE.json:world.turn_count = 1` (turn consumed) ✓
-- `INVENTORY/items.md` lists "Torch" ✓
-- `WORLD/entrance.md` no longer lists torch under "Items Here" ✓
-- `PLAYER.md` shows inventory containing torch ✓
-- `LOGS/session.md` has new entry describing torch pickup ✓
+**Then (on arrival in dungeon_cell):**
+- `STATE.json:player.inventory = ["iron_key"]` ✓
+- `STATE.json:items.iron_key.taken = true` ✓
+- `STATE.json:items.iron_key.location = "inventory"` ✓
+- `STATE.json:world.turn_count = 1` (turn consumed for the move) ✓
+- `INVENTORY/items.md` lists "Iron Key" ✓
+- `WORLD/dungeon_cell.md` Items Here shows `*(none)*` ✓
+- `PLAYER.md` shows inventory containing Iron Key ✓
+- `LOGS/session.md` has entry noting move and auto-pickup ✓
 
-**Expected narration:** "You take the torch. Its warmth is faint comfort in the castle's chill."
+**Expected narration:** Arrival description + "The iron key finds its way into your hand."
 
 ---
 

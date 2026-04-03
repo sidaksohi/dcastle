@@ -41,14 +41,18 @@ Process conditions in this order:
 1. `STATE.json:player.current_room = <destination_id>`
 2. Add destination to `STATE.json:world.rooms_visited` if not already present
 3. If `requires_item` was in the exit: set `items.<id>.location = "used"`, remove `<id>` from `player.inventory`
-4. `STATE.json:world.turn_count += 1`
-5. Write `STATE.json`
-6. Write `PLAYER.md` (update current location)
-7. Write `INVENTORY/items.md` (if item was consumed)
-8. Write `WORLD/<origin_room>.md` (no changes needed for move alone)
-9. Append to LOGS: `[Turn {N}] MOVE {direction} → arrived in {destination_name}`
-10. Run darkness check (see CLAUDE.md §Darkness Check)
-11. Narrate arrival using `WORLD/<destination>.md` description
+4. **AUTO-PICKUP:** For every item where `location == destination_id` AND `taken == false`:
+   - Set `items.<id>.location = "inventory"`, `items.<id>.taken = true`
+   - Add `<id>` to `player.inventory`
+   - Remove item bullet from `WORLD/<destination>.md` Items Here section
+5. `STATE.json:world.turn_count += 1`
+6. Write `STATE.json`
+7. Write `PLAYER.md` (update location and inventory)
+8. Write `INVENTORY/items.md` (add any auto-picked items, remove any consumed key)
+9. Write `WORLD/<destination>.md` (remove auto-picked items from Items Here)
+10. Append to LOGS: `[Turn {N}] MOVE {direction} → arrived in {destination_name}` + list any auto-picked items
+11. Run darkness check (see CLAUDE.md §Darkness Check)
+12. Narrate arrival using `WORLD/<destination>.md` description, mentioning picked-up items naturally
 
 ### Step 5 — Special: Escape from entrance
 

@@ -88,9 +88,13 @@ If `requires_item` IS met: the item is **consumed** on use (location = "used", r
 5. If `requires_item` triggered and passing: consume the item
 6. Update `STATE.json:player.current_room`
 7. Add destination to `STATE.json:world.rooms_visited` if not present
-8. Increment `turn_count`
-9. Run darkness check
-10. Narrate arrival using `WORLD/<destination>.md`
+8. **AUTO-PICKUP:** All items in the destination room are automatically added to inventory
+   - For each item: `location = "inventory"`, `taken = true`, added to `player.inventory`
+   - `WORLD/<destination>.md` Items Here section updated to `*(none)*`
+   - `INVENTORY/items.md` and `PLAYER.md` updated
+9. Increment `turn_count`
+10. Run darkness check
+11. Narrate arrival using `WORLD/<destination>.md`, weaving in any picked-up items naturally
 
 ### Special: Escape from Entrance
 

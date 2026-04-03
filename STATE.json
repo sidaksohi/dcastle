@@ -2,15 +2,15 @@
   "version": "1.0.0",
   "player": {
     "name": "The Wanderer",
-    "current_room": "entrance",
+    "current_room": "great_hall",
     "inventory": [],
     "status": "alive",
     "health": 100
   },
   "world": {
     "darkness_level": 1,
-    "turn_count": 0,
-    "rooms_visited": ["entrance"],
+    "turn_count": 3,
+    "rooms_visited": ["entrance", "dungeon_cell", "great_hall"],
     "flags": {
       "gate_unlocked": false,
       "crypt_materialized": false,
@@ -33,8 +33,8 @@
       "description": "A guttering torch, its flame weak but persistent."
     },
     "iron_key": {
-      "location": "dungeon_cell",
-      "taken": false,
+      "location": "used",
+      "taken": true,
       "name": "Iron Key",
       "description": "A heavy iron key, cold and slick with age. The bow is shaped like a serpent devouring its own tail."
     },
