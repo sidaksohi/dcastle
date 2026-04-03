@@ -1,0 +1,109 @@
+{
+  "rooms": {
+    "entrance": {
+      "id": "entrance",
+      "name": "Castle Entrance",
+      "exits": {
+        "north": { "to": "great_hall" },
+        "east": { "to": "dungeon_cell" },
+        "outside": { "to": "escaped", "requires_flag": "gate_unlocked" }
+      },
+      "items_initial": ["torch"],
+      "npc": null
+    },
+    "great_hall": {
+      "id": "great_hall",
+      "name": "The Great Hall",
+      "exits": {
+        "south": { "to": "entrance" },
+        "west": { "to": "armory" },
+        "up": { "to": "tower" },
+        "down": { "to": "dungeon_cell", "requires_item": "iron_key" }
+      },
+      "items_initial": [],
+      "npc": "ghost_knight"
+    },
+    "armory": {
+      "id": "armory",
+      "name": "The Armory",
+      "exits": {
+        "east": { "to": "great_hall" }
+      },
+      "items_initial": ["rusty_sword"],
+      "npc": null
+    },
+    "dungeon_cell": {
+      "id": "dungeon_cell",
+      "name": "Dungeon Cell",
+      "exits": {
+        "west": { "to": "entrance" },
+        "north": { "to": "great_hall", "requires_item": "iron_key" }
+      },
+      "items_initial": ["iron_key"],
+      "npc": null
+    },
+    "tower": {
+      "id": "tower",
+      "name": "The Watchtower",
+      "exits": {
+        "down": { "to": "great_hall" }
+      },
+      "items_initial": ["ancient_scroll"],
+      "npc": null
+    },
+    "crypt": {
+      "id": "crypt",
+      "name": "The Crypt",
+      "exits": {
+        "west": { "to": "great_hall" }
+      },
+      "items_initial": ["bone_amulet"],
+      "npc": null,
+      "latent": true,
+      "materializes_at_darkness": 5
+    },
+    "void_corridor": {
+      "id": "void_corridor",
+      "name": "The Void Corridor",
+      "exits": {
+        "south": { "to": "crypt" }
+      },
+      "items_initial": [],
+      "npc": null,
+      "latent": true,
+      "materializes_at_darkness": 8
+    }
+  },
+  "item_effects": {
+    "torch": {
+      "type": "passive",
+      "effect": "enhanced_inspect",
+      "description": "Carrying the torch reveals extra detail during INSPECT."
+    },
+    "iron_key": {
+      "type": "key",
+      "unlocks_exit": "dungeon_cell_north",
+      "consumed_on_use": true,
+      "description": "Used automatically when moving north from dungeon_cell, or explicitly with 'use key on door'."
+    },
+    "rusty_sword": {
+      "type": "passive",
+      "effect": "flavor_dialogue",
+      "description": "Sir Aldric acknowledges it if you carry it. No mechanical effect."
+    },
+    "ancient_scroll": {
+      "type": "quest_item",
+      "use_on_npc": "ghost_knight",
+      "required_npc_state": "bound",
+      "triggers": "quest_complete_sequence",
+      "consumed_on_use": true,
+      "description": "Given to Sir Aldric to free him and break the curse."
+    },
+    "bone_amulet": {
+      "type": "passive",
+      "effect": "darkness_slow",
+      "darkness_tick_interval": 7,
+      "description": "While carried, darkness ticks every 7 turns instead of every 5."
+    }
+  }
+}

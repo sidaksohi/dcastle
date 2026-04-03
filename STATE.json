@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "player": {
+    "name": "The Wanderer",
+    "current_room": "entrance",
+    "inventory": [],
+    "status": "alive",
+    "health": 100
+  },
+  "world": {
+    "darkness_level": 1,
+    "turn_count": 0,
+    "rooms_visited": ["entrance"],
+    "flags": {
+      "gate_unlocked": false,
+      "crypt_materialized": false,
+      "void_corridor_materialized": false
+    }
+  },
+  "npcs": {
+    "ghost_knight": {
+      "location": "great_hall",
+      "state": "bound",
+      "spoken_to": false,
+      "quest_complete": false
+    }
+  },
+  "items": {
+    "torch": {
+      "location": "entrance",
+      "taken": false,
+      "name": "Torch",
+      "description": "A guttering torch, its flame weak but persistent."
+    },
+    "iron_key": {
+      "location": "dungeon_cell",
+      "taken": false,
+      "name": "Iron Key",
+      "description": "A heavy iron key, cold and slick with age. The bow is shaped like a serpent devouring its own tail."
+    },
+    "rusty_sword": {
+      "location": "armory",
+      "taken": false,
+      "name": "Rusty Sword",
+      "description": "A once-proud blade, now eaten by rust. The edge still catches what little light exists."
+    },
+    "ancient_scroll": {
+      "location": "tower",
+      "taken": false,
+      "name": "Ancient Scroll",
+      "description": "Sealed with black wax marked by a broken sigil. It hums faintly when touched."
+    },
+    "bone_amulet": {
+      "location": "crypt",
+      "taken": false,
+      "name": "Bone Amulet",
+      "description": "A carved bone amulet on a rotted cord. The darkness grows slightly less aggressive when you hold it."
+    }
+  }
+}
