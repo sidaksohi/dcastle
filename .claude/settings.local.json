@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo:*)",
+      "Bash(where gh:*)",
+      "Bash(winget list:*)",
+      "mcp__github__get_me",
+      "mcp__github__create_repository"
+    ]
+  }
+}
