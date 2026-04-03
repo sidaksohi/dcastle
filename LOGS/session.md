@@ -45,4 +45,15 @@ The darkness deepens slightly. Sir Aldric's chains pulse.
 
 [Turn 7] MOVE up → arrived in Watchtower. AUTO-PICKUP: ancient_scroll.
 The scroll hums the moment it is touched.
+
+[invalid] USE ancient_scroll → ghost_knight not in current room (tower). Player must return to great_hall.
+
+[Turn 8] MOVE down (tower) → arrived in Great Hall. No items.
+
+[Turn 9] QUEST COMPLETE — ancient_scroll given to Sir Aldric.
+  ghost_knight.state: bound → freed | quest_complete: true
+  darkness_level: 2 → 0 (curse shattered)
+  flags.gate_unlocked: true
+  ancient_scroll: inventory → used
+THE CASTLE HAS BEEN BROKEN. THE GATE IS OPEN.
 ```

@@ -22,7 +22,7 @@ His hollow lantern-eyes find you immediately.
 
 ## NPCs
 
-- **Sir Aldric the Bound** — A ghost in ruined armor, chained to the center of the hall. He has been here a very long time.
+- **Sir Aldric** — Free. Still a ghost, still translucent — but standing straight, his chains gone, his eyes bright.
 
 ---
 

@@ -2,9 +2,9 @@
 
 **NPC ID:** `ghost_knight`
 **Location:** `great_hall` *(permanent — never moves)*
-**Current State:** `bound`
+**Current State:** `freed`
 **Spoken To:** `true`
-**Quest Complete:** `false`
+**Quest Complete:** `true`
 
 ---
 

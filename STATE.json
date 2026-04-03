@@ -2,17 +2,17 @@
   "version": "1.0.0",
   "player": {
     "name": "The Wanderer",
-    "current_room": "tower",
-    "inventory": ["rusty_sword", "ancient_scroll"],
+    "current_room": "great_hall",
+    "inventory": ["rusty_sword"],
     "status": "alive",
     "health": 100
   },
   "world": {
-    "darkness_level": 2,
-    "turn_count": 7,
+    "darkness_level": 0,
+    "turn_count": 9,
     "rooms_visited": ["entrance", "dungeon_cell", "great_hall", "armory", "tower"],
     "flags": {
-      "gate_unlocked": false,
+      "gate_unlocked": true,
       "crypt_materialized": false,
       "void_corridor_materialized": false
     }
@@ -20,9 +20,9 @@
   "npcs": {
     "ghost_knight": {
       "location": "great_hall",
-      "state": "bound",
+      "state": "freed",
       "spoken_to": true,
-      "quest_complete": false
+      "quest_complete": true
     }
   },
   "items": {
@@ -45,7 +45,7 @@
       "description": "A once-proud blade, now eaten by rust. The edge still catches what little light exists."
     },
     "ancient_scroll": {
-      "location": "inventory",
+      "location": "used",
       "taken": true,
       "name": "Ancient Scroll",
       "description": "Sealed with black wax marked by a broken sigil. It hums faintly when touched."
