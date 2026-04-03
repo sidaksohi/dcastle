@@ -2,14 +2,14 @@
   "version": "1.0.0",
   "player": {
     "name": "The Wanderer",
-    "current_room": "great_hall",
+    "current_room": "outside",
     "inventory": ["rusty_sword"],
-    "status": "alive",
+    "status": "escaped",
     "health": 100
   },
   "world": {
-    "darkness_level": 0,
-    "turn_count": 9,
+    "darkness_level": 1,
+    "turn_count": 11,
     "rooms_visited": ["entrance", "dungeon_cell", "great_hall", "armory", "tower"],
     "flags": {
       "gate_unlocked": true,

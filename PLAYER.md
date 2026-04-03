@@ -1,8 +1,8 @@
 # The Wanderer
 
-**Status:** Alive
+**Status:** ESCAPED
 **Health:** 100
-**Current Location:** The Great Hall
+**Current Location:** Outside — Free
 
 ---
 

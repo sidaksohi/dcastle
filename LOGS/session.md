@@ -56,4 +56,14 @@ The scroll hums the moment it is touched.
   flags.gate_unlocked: true
   ancient_scroll: inventory → used
 THE CASTLE HAS BEEN BROKEN. THE GATE IS OPEN.
+
+[Turn 10] MOVE south → returned to Castle Entrance.
+⚠ DARKNESS TICK: turn 10 → darkness_level 0→1. The castle stirs again, already hungry.
+
+[Turn 11] MOVE south (entrance) → flags.gate_unlocked=true → ESCAPE
+═══════════════════════════════════════════════
+THE WANDERER HAS ESCAPED THE CASTLE.
+═══════════════════════════════════════════════
+player.status: alive → escaped
+Turns taken: 11 | Final darkness: 1
 ```
